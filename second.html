@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Location Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #010101;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #0c0b0b;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+
+        .user-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .user-info,
+        .post-offices {
+            margin-bottom: 20px;
+        }
+
+        .user-info p,
+        .post-offices h2 {
+            margin: 5px 0;
+        }
+
+        .map-container {
+            height: 300px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        #post-offices-list {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            padding: 10px;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+
+        li {
+            border: 2px solid silver;
+            background-color: #575A85;
+            padding: 10px;
+        }
+
+        #post-offices-list li {
+            padding: 5px 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .search-box {
+            margin-bottom: 10px;
+        }
+
+        #search-input {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+
+    <script src="script.js">
+
+
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>User Location Project</h1>
+        <div class="user-info">
+            <p><strong>User IP Address:</strong> <span id="user-ip"></span></p>
+        <p><strong>Timezone:</strong> <span id="timezone"></span></p>
+        <p><strong>City:</strong> <span id="city"></span></p>
+        <p><strong>Region:</strong> <span id="region"></span></p>
+        <p><strong>Organization:</strong> <span id="organization"></span></p>
+        <p><strong>Hostname:</strong> <span id="hostname"></span></p>
+        
+           
+        </div>
+        <div class="map-container" id="map-container">
+           
+        </div>
+
+        <div>
+           <center> <h2>More information About You</h2></center>
+            <p>Time Zone: <span id="Zone"></span></p>
+            <p>Date and Time: <span id="date"></span> </p>
+            <p> pincode: <span id="pincode"></span></p>
+            <p>Message:</p>
+        </div>
+
+
+        <div class="post-offices">
+        <center> <h2>Post Offices in the Area</h2></center>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search by name or branch office">
+            </div>
+            <ul id="post-offices-list">
+          
+            </ul>
+        </div>
+        <button id="get-location-btn">Get User Location</button>
+    </div>
+    <script>
+        
+    </script>
+</body>
+
+</html>
