@@ -7,7 +7,7 @@ async function getData() {
         document.getElementById("user-ip").innerText = userIP;
 
         // Fetch additional details using the user's IP address
-        const geoResponse = await fetch(`https://ipinfo.io/${userIP}/geo?token=30dd7efacbc702`);
+       const geoResponse = await fetch(`https://ipinfo.io/43.247.41.95?token=30dd7efacbc702`);
         const geoinfo = await geoResponse.json();
 
         // Display the fetched information
